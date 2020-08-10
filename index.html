@@ -5,45 +5,28 @@
     </head>
     <body>
         <div class="center">
-            <p>Radek 1(po penaltách sráč) - 4 Tom</p>
+            <div>
+            <p>Radek 5 - 6 Tom</p>
+            </div>
+            <div>
+            </div>
         </div>
         <div class="center" style="background-color: red;">
-            <p id="demo"></p>
+            <table>
+                <tr>
+                    <td>1:2</td>
+                </tr>
+                <tr>
+                    <td>3:0</td>
+                </tr>
+                <tr>
+                    <td>3:2</td>
+                </tr>
+                <tr>
+                    <td>2:1</td>
+                </tr>
+            </table>
         </div>
-    <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
-    setDemoToCountdown();
-
-    function setDemoToCountdown() {
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Display the result in the element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s než Radek vyhraje";
-
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-        setDemoToCountdown();
-    }, 1000);
-    </script>
     </body>
 </html>
 
